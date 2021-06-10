@@ -7,90 +7,25 @@
         <title>Document</title>
     </head>
     <body>
-        <div class="container">
-            <section>
-                <h4>Choose only one value</h4>
-                <form action="javascript:void(0);" id="id-radio">
-                    <div>
-                        <label for="id-red">red</label>
-                        <label for="id-green">green</label>
-                        <label for="id-blue">blue</label>
-                        <label for="id-black">black</label>
-                    </div>
-                    <div>
-                        <input
-                            id="id-red"
-                            name="colors"
-                            type="radio"
-                            value="red"
-                        />
-                        <input
-                            id="id-green"
-                            name="colors"
-                            type="radio"
-                            value="green"
-                            checked
-                        />
-                        <input
-                            id="id-blue"
-                            name="colors"
-                            type="radio"
-                            value="blue"
-                        />
-                        <input
-                            id="id-black"
-                            name="colors"
-                            type="radio"
-                            value="black"
-                            disabled
-                        />
-                    </div>
-                </form>
-                <button form="id-radio" type="submit">Submit</button>
-                <button form="id-radio" type="reset">Reset</button>
-            </section>
-            <section>
-                <h4>Choose multiple values</h4>
-                <form action="javascript:void(0);" id="id-checkbox">
-                    <div>
-                        <label for="red">red</label>
-                        <label for="green">green</label>
-                        <label for="blue">blue</label>
-                        <label for="black">black</label>
-                    </div>
-                    <div>
-                        <input
-                            id="red"
-                            name="colors"
-                            type="checkbox"
-                            value="red"
-                        />
-                        <input
-                            id="green"
-                            name="colors"
-                            type="checkbox"
-                            value="green"
-                            checked
-                        />
-                        <input
-                            id="blue"
-                            name="colors"
-                            type="checkbox"
-                            value="blue"
-                        />
-                        <input
-                            id="black"
-                            name="colors"
-                            type="checkbox"
-                            value="black"
-                            disabled
-                        />
-                    </div>
-                </form>
-                <button form="id-checkbox" type="submit">Submit</button>
-                <button form="id-checkbox" type="reset">Reset</button>
-            </section>
-        </div>
+        <form action="javascript:void(0);">
+            <select>
+                <optgroup label="Developer">
+                    <option value="frontend">Frontend</option>
+                </optgroup>
+                <optgroup label="Base skills">
+                    <option value="html" selected>HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                </optgroup>
+                <optgroup label="Frameworks" disabled>
+                    <option value="vue">Vue</option>
+                    <option value="react">React + GraphQL</option>
+                    <option value="angular">Angular</option>
+                </optgroup>
+            </select>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
     </body>
 </html>
 А
